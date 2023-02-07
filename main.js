@@ -1,3 +1,5 @@
+const carouselInner = document.getElementById("heroFirst");
+
 const images = [
     {
         image: 'img/01.webp',
@@ -32,8 +34,8 @@ for (const slide of images) {
     const slideHTML = `
     
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" id="heroFirst">
+        <div class="carouselInner">
+            <div class="carouselItem active" id="heroFirst">
                 <img src=${slide.image} class="d-block w-100" alt="...">
                 <h1>${slide.title}</h1>
                 <p>${slide.text}</p>
@@ -42,6 +44,6 @@ for (const slide of images) {
     </div>`;
 
 
-    slide.innerHTML += slideHTML
+    carouselInner.innerHTML += slideHTML
 
 }
