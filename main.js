@@ -23,11 +23,17 @@ const images = [
 ];
 
 
-for (const sliderImage of images) {
+for (const page of images) {
+
+    console.log(page.image);
+    console.log(page.title);
+    console.log(page.text);
+
     const slideHTML = `
         <div class="carousel-inner">
             <div class="carousel-item active" id="heroFirst">
-                <img src=". . ." class="d-block w-100" alt="...">
+                <img src="images.image" class="d-block w-100" alt="...">
+                <p>images.text</p>
             </div>
         </div>`;
 
