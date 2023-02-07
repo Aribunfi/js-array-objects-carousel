@@ -30,13 +30,16 @@ for (const page of images) {
     console.log(page.text);
 
     const slideHTML = `
+    
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" id="heroFirst">
                 <img src=${page.image} class="d-block w-100" alt="...">
                 <h1>${page.title}</h1>
                 <p>${page.text}</p>
             </div>
-        </div>`;
+        </div>
+    </div>`;
 
 
     images.innerHTML += slideHTML
