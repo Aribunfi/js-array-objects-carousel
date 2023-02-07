@@ -32,8 +32,9 @@ for (const page of images) {
     const slideHTML = `
         <div class="carousel-inner">
             <div class="carousel-item active" id="heroFirst">
-                <img src="images.image" class="d-block w-100" alt="...">
-                <p>images.text</p>
+                <img src=${page.image} class="d-block w-100" alt="...">
+                <h1>${page.title}</h1>
+                <p>${page.text}</p>
             </div>
         </div>`;
 
