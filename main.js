@@ -50,3 +50,8 @@ for (const slide of images) {
     carouselInner.innerHTML += slideHTML;
 
 }
+
+{
+    if (images(index = 0))
+        let = carouselInner.active
+} 
